@@ -45,7 +45,7 @@ stages:
           --name devops-aci-container \
           --image $(acrLoginServer)/$(imageName):latest \
           --registry-login-server $(acrLoginServer) \
-          --registry-username $(acrName) \
+          --registry-username $(az acr credential show --name $(acrName) --query username -o tsv) \
           --registry-password $(az acr credential show --name $(acrName) --query passwords[0].value -o tsv) \
           --dns-name-label devops-aci-demo123 \
           --ports 3000 \
