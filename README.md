@@ -1,10 +1,9 @@
-# 🚀 Azure DevOps CI/CD Pipeline — Docker to ACI
+# Azure DevOps CI/CD Pipeline — Docker to ACI
 
 ![Node.js](https://img.shields.io/badge/Node.js-18-339933?style=flat&logo=node.js&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Alpine-2496ED?style=flat&logo=docker&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-Container%20Instances-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 ![Azure DevOps](https://img.shields.io/badge/Azure%20DevOps-Pipeline-0078D7?style=flat&logo=azuredevops&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)
 
 > A containerized **Node.js** web application deployed via a fully automated **Azure DevOps CI/CD pipeline** — from a `git push` to a live container on **Azure Container Instances (ACI)** in a single workflow.
 
@@ -57,8 +56,8 @@ No manual steps. No clicking through the Azure portal. Just `git push`.
 │   │    → ACR            │     │    → deploys to ACI      │ │
 │   └─────────────────────┘      └─────────────────────────┘  │
 └─────────────────────────────────────────────────────────────┘
-          │                                    │
-                 ▼                                                             ▼
+         │                                    │
+          ▼                                    ▼
 ┌──────────────────┐               ┌──────────────────────┐
 │  Azure Container │               │  Azure Container     │
 │  Registry (ACR)  │               │  Instances (ACI)     │
